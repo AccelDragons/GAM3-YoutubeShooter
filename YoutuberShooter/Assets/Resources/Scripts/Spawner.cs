@@ -27,7 +27,7 @@ public class Spawner : MonoBehaviour
 		else
 		{
 			randX = Random.Range(-7.33f, 7.33f);
-			wheretoSpawn = new Vector2(randX, transform.position.y);
+			wheretoSpawn = new Vector3(randX, transform.position.y, transform.position.x);
 			GameObject G = Instantiate(EnemyPrefab, wheretoSpawn, Quaternion.identity);
 			G.GetComponent<Enemy>().player = player;
 			counter = 0.0f;
