@@ -22,9 +22,14 @@ public class GameOver : MonoBehaviour
 	{
 		if (collision.gameObject.tag == "Enemy")
 		{
-			//gameObject.SetActive = false;
-			SceneManager.LoadScene("Game Over");
+			Destroy(gameObject);
+			StartCoroutine(WaitForIt());
+			SceneManager.LoadScene("GameOver");
 		}
     }
 
+	IEnumerator WaitForIt()
+	{
+		yield return new WaitForSeconds(3);
+	}
 }
