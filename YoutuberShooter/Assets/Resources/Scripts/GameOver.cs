@@ -24,7 +24,14 @@ public class GameOver : MonoBehaviour
 		{
 			Destroy(gameObject);
 			StartCoroutine(WaitForIt());
-			SceneManager.LoadScene("GameOver");
+			if (SceneManager.GetSceneByName("Game 1").isLoaded)
+			{
+				SceneManager.LoadScene("GameOver1");
+			}
+			else if (SceneManager.GetSceneByName("Game 2").isLoaded)
+			{
+				SceneManager.LoadScene("GameOver2");
+			}
 		}
     }
 

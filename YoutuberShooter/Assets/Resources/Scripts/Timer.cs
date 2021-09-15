@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
 	public GameObject textDisplay;
-	public int secondsLeft = 30;
+	public int secondsLeft = 10;
 	public bool countdown = false;
 
     // Start is called before the first frame update
@@ -43,7 +43,14 @@ public class Timer : MonoBehaviour
 		if (secondsLeft == 0)
 		{
 			yield return new WaitForSeconds(1);
-			SceneManager.LoadScene("GameWin");
+			if (SceneManager.GetSceneByName("Game 1").isLoaded)
+			{
+				SceneManager.LoadScene("GameWin1");
+			}
+			else if (SceneManager.GetSceneByName("Game 2").isLoaded)
+			{
+				SceneManager.LoadScene("GameWin2");
+			}
 		}
 	}
 }
