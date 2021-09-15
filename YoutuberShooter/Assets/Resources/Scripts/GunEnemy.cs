@@ -8,6 +8,7 @@ public class GunEnemy : MonoBehaviour
     public float moveSpeed = 1.0f;
     private Rigidbody2D rb;
     private Vector2 movement;
+    public float enemyHP = 3;
 
 
     // Start is called before the first frame update
@@ -41,7 +42,14 @@ public class GunEnemy : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet")
         {
-            Destroy(gameObject);
+            if (enemyHP <= 0)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                enemyHP--;
+            }
         }
 
     }

@@ -819,8 +819,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnRate: 8
   nextSpawn: 5
-  GunEnemyPrefab: {fileID: 1080745483749462466, guid: 4d98c1d27e07b354ea7c3ec1c930b113, type: 3}
-  counter: 6
+  GunEnemyPrefab: {fileID: 9170473482220729505, guid: 4d98c1d27e07b354ea7c3ec1c930b113, type: 3}
+  counter: 0
   player: {fileID: 704042775}
 --- !u!4 &594076333
 Transform:
@@ -1097,7 +1097,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnRate: 8
   nextSpawn: 4
-  GunEnemyPrefab: {fileID: 1080745483749462466, guid: 4d98c1d27e07b354ea7c3ec1c930b113, type: 3}
+  GunEnemyPrefab: {fileID: 9170473482220729505, guid: 4d98c1d27e07b354ea7c3ec1c930b113, type: 3}
   counter: 0
   player: {fileID: 704042775}
 --- !u!4 &717707186
