@@ -16,6 +16,11 @@ public class RetryLevel : MonoBehaviour
 		SceneManager.LoadScene("Game 2");
 	}
 
+	public void Retry3()
+	{
+		SceneManager.LoadScene("Game 3");
+	}
+
 	public void LoadMain()
 	{
 		SceneManager.LoadScene("MainMenu");

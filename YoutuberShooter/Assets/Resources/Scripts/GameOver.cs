@@ -32,6 +32,10 @@ public class GameOver : MonoBehaviour
 			{
 				SceneManager.LoadScene("GameOver2");
 			}
+			else if (SceneManager.GetSceneByName("Game 3").isLoaded)
+			{
+				SceneManager.LoadScene("GameOver3");
+			}
 		}
     }
 
